@@ -8,7 +8,6 @@
 </head>
 <body>
     <h1>Tečaj kuhanja</h1>
-    <br>
     <h3>Raspored</h3>
     <table border="1"> 
         <tr>
@@ -37,9 +36,48 @@
             <td>zavičajna hrana</td>
             <td>desert po izboru</td>
         </tr>
+        <tr>
+            <td>Subota</td>
+            <td colspan="4">podjela certifikata o završenom tečaju</td>
+        </tr>
     </table>
     <br><hr>
-    <h3>Obrazac za prijavu</h3>
-    
+    <p>Za prijavu na tečaj je potrebno ispuniti obrazac ispod.</p>
+    <h3>Obrazac za prijavu</h3> 
+    <form name="obrazac1" method="post" autocomplete="off" action="link1.html">
+        <label for="ime">Ime:</label>
+        <input id="ime" type="text" size="15" placeholder="Unesi ime.." required>
+        <br><br>
+        <label for="prezime">Prezime:</label>
+        <input id="prezime" type="text" size="15" placeholder="Unesi prezime.." required>
+        <br><br>
+        <label for="pass">Lozinka:</label>
+        <input type="password" name="password" id="pass" size="15" required>
+        <br><hr>
+        <p>Način prijave:</p>
+        <input type="radio" name="language" id="admin" value="admin">
+        <label for="admin">Admin</label>
+        <br>
+        <input type="radio" name="language" id="guest" value="guest">
+        <label for="guest">Guest</label>
+        <br><hr>
+        <p>Prihvaćaš li uvjete korištenja?</p>
+        <input type="checkbox" name="language" id="da">
+        <label for="da">Prihvaćam</label>
+        <br><br>
+        <input type="submit" value="Pošalji">
+        <br>
+        <input type="reset" value="Poništi">
+    </form>
+    <br><hr>
+    <h5>Pogledaj videozapis</h5>
+    <video width="320" height="240" controls>
+        <source src="video/puppy.mp4" type="video/mp4">
+    </video>
+    <br><hr>
+    <h5>Poslušaj audiozapis</h5>
+    <audio controls>
+        <source src="zvuk/test-audio.ogg" type="audio/mp3">
+    </audio>
 </body>
 </html>
