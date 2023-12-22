@@ -5,23 +5,105 @@
     <meta name="autor" content="magdalena kovacevic">
     <meta name="opis" content="recepti">
     <title>Recepti</title>
+    <style>
+        h1 {
+            color: red;
+            font-size: 40px;
+            font-style: oblique;
+            text-align: center;
+        }
+        body {
+            background-color: aliceblue;
+        }
+        .paragraf {
+            font-family: Arial, Helvetica, sans-serif ;
+            color: green;
+            font-weight: bold;
+        }
+        h4 {
+            font-weight: bolder;
+            color: darkgoldenrod;
+            font-size: 30px;
+        }
+        .lista {
+        list-style: square;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        background-color: aquamarine;
+        font-weight: bold;
+        }
+        h2 {
+            color: red;
+            font-style: italic;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        .lista1 {
+            font-size: 20px;
+            font-weight: bolder;
+            color: crimson;
+            list-style-type: square;
+        }
+        h3 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 35px;
+            font-weight: 800;
+            color: darkred;
+            background-color: rgb(225, 241, 197);
+        }
+        .container {
+            display: grid;
+            gap: 10px;
+        }
+        .one {
+            grid-column: span 12;
+            grid-row: span 5;
+            background-color: grey;
+            height: 300px;
+        }
+        .two {
+            grid-column: span 8;
+            grid-row: span 7;
+            background-color: grey;
+            height: 500px;
+        }
+        .three {
+            grid-column: span 4;
+            grid-row: span 7;
+            background-color: grey;
+            height: 500px;
+        }
+        .slovo {
+            color: black;
+            font-size: 30px;
+            font-weight: bolder;
+            text-align: center;
+        }
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>Božićni recepti</h1>
-    <br>
-    <p>
-        Kulinarski dijelovi Hrvatske se razlikuju, ali za Božić se pripremaju obično slična jela.
+    <p class="paragraf">
+    Kulinarski dijelovi Hrvatske se razlikuju, ali za Božić se pripremaju obično slična jela.
     </p>
-    <br><hr>
-    <h2>Slana jela</h2>
-    <ul>
+     <h2>Slana jela</h2>
+    <ul class="lista1">
         <li>Fiš paprikaš</li>
         <li>Lignje na žaru</li>
     </ul>
-    <br>
+    <h2>Kolači</h2>
+    <ul class="lista1">
+        <li>Čupavci</li>
+        <li>Ledene kocke</li>
+    </ul>
     <h3>Fiš paprikaš</h3>
     <h4>Sastojci</h4>
-    <ul>
+    <ul class="lista">
         <li>1,25kg ribe po izboru</li>
         <li>30 dg luka</li>
         <li>1 ljuti feferon</li>
@@ -31,14 +113,13 @@
         <li>sol, papar</li>
     </ul>
     <h4>Priprema</h4>
-    <p>Ribu nasijecite na manje komade. Naribani luk skuhajte u malo vode. Dodajte ostale sastojke i kuhajte
+    <p class="paragraf">Ribu nasijecite na manje komade. Naribani luk skuhajte u malo vode. Dodajte ostale sastojke i kuhajte
         30-40minuta. Poslužite uz tjesteninu.
     </p>
     <img src="slikee/fis.jpg" alt="Slika fiš paprikaša" width="300" height="200">
-    <hr>
     <h3>Lignje na žaru</h3>
     <h4>Sastojci</h4>
-    <ul>
+    <ul class="lista">
         <li>1kg lignji</li>
         <li>maslinovo ulje</li>
         <li>4 režnja češnjaka</li>
@@ -48,21 +129,14 @@
         <li>sol, papar</li>
     </ul>
     <h4>Priprema</h4>
-    <p>Lignje premažite maslinovim uljem i stavite ih peći na roštilj. Pecite dok ne dobiju
+    <p class="paragraf">Lignje premažite maslinovim uljem i stavite ih peći na roštilj. Pecite dok ne dobiju
         zlatnožutu boju. Skuhajte blitvu i krumpir. Začine dobro promiješajte.
         Lignje poslužite začinjene s prilogom od blitve i krumpira.
     </p>
     <img src="slikee/lig.jpg" alt="slika lignji" width="300" height="200">
-    <br><hr><br>
-    <h2>Kolači</h2>
-    <ul>
-        <li>Čupavci</li>
-        <li>Ledene kocke</li>
-    </ul>
-    <br>
     <h3>Čupavci</h3>
     <h4>Sastojci za biskvit</h4>
-    <ul>
+    <ul class="lista">
         <li>3 jaja</li>
         <li>220g šećera</li>
         <li>180ml ulja</li>
@@ -72,14 +146,14 @@
         <li>2 žlice kokosa u prahu</li>
     </ul>
     <h4>Sastojci za čokoladni preljev</h4>
-    <ul>
+    <ul class="lista">
         <li>150g čokolade</li>
         <li>200ml mlijeka</li>
         <li>150g maslaca</li>
         <li>200g kokosa</li>
     </ul>
     <h4>Priprema</h4>
-   <p>
+   <p class="paragraf">
     Izmiksati sastojke za biskvit te ispeći biskvit. Peče se na 120 stupnjeva otprilike 30min. 
     Ohlađeni biskvit nasjeći na kockice i umeljati u čokoladni preljev.
    </p>
@@ -87,7 +161,7 @@
    <br>
    <h3>Ledene kocke</h3>
    <h4>Sastojci za biskvit</h4>
-   <ul>
+   <ul class="lista">
     <li>šećer (5 žlica)</li>
     <li>brašno (5 žlica)</li>
     <li>mlijeko (70ml)</li>
@@ -95,7 +169,7 @@
     <li>bjelanjak (5)</li>
    </ul>
    <h4>Sastojci za kremu</h4>
-   <ul>
+   <ul class="lista">
     <li>5 žumanjaka</li>
     <li>šećer, brašno, vanilin šećer</li>
     <li>margarin</li>
@@ -103,10 +177,21 @@
     <li>mlijeko</li>
    </ul>
    <h4>Priprema</h4>
-   <p>
+   <p class="paragraf">
     Za biskvit dobro izmješati sastojke i ispeći. Skuhajte kremu. Kada se sve ohladi, biskvit
     premazati kremom te staviti šlag. Poslužiti ohlađeno.
    </p>
    <img src="slikee/lk.jpeg" alt="Ledene kocke" width="300" height="400">
+   <div class="container">
+    <div class="one">
+        <h1 class="slovo">A</h1>
+    </div>
+    <div class="two">
+        <h1 class="slovo">B</h1>
+    </div>
+    <div class="three">
+        <h1 class="slovo">C</h1>
+    </div>
+   </div>
 </body>
 </html>
