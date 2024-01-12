@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Moja web stranica</title>
@@ -15,54 +16,116 @@
     </style> -->
 </head>
 <body>
- <h1>Naslov 1</h1>
- <h2>Naslov 2</h2> 
- <h3>Naslov 3</h3>
- <h4>Naslov 4</h4>
- <h5>Naslov 5</h5>
- <h6>Naslov 6</h6>
- <!--Ovdje kreće paragraf-->
- <p class="paragraf1">Ovo je neki paragraf
-    Ovo je prvi red
-    Ovo je drugi red
-    Ovo je treći red
- </p>
-<pre>
-    Ovo je prvi red
-    Ovo je drugi red
-    Ovo je treći red
-</pre>
-<p id="paragraf2">
-    Jučer smo igrali <b>loše</b> , jako <strong>loše</strong> to nije bilo <em>prepoznatljivo</em>.
-    nakon dugo <mark>vremena</mark> imali smo <del>utakmicu</del> gdje smo svi bili loši.
-    Ja ću preuzeti odgovornost na sebe jer očito taktički nisam dobro pripremio utakmicu.
-    Teško je pao svima poraz, nismo naučili na ovakve stvari, podigli smo letvicu jako visoko i teško je to održati. ne kukam nikad nikad, nisam sklon ni tragediji ni euforiji. Žao mi je što izgubili u ovakvoj atmosferi. Žao mi je zbog tih ljudi, isprika svima njima - kazao je Dalić.
-</p>
-<p>Formula za teoriju relativnosti je E=MC <sup>2</sup> 
-</p>
-<h2>Liste</h2>
-<p>Zemlje: </p>
-<ul>
-    <li>Hrvatska</li>
-    <li>Bosna i Hercegovina</li>
-    <li>Slovenija</li>
-    <li>Francuska</li>
-</ul>
-<p>Zemlje u okruženju:</p>
-<ol type="1" reversed>
-    <li>Hrvatska</li>
-    <li>Slovenija</li>
-    <li>Bosna</li>
-</ol>
-<p>Definition Liste</p>
-<dl>
-    <dt>London</dt>
-    <dd>glavni grad Engleske</dd>
-    <img src="slike/london.jpg" alt="slika Londona" width="350" height="300">
-    <dt>Pariz</dt>
-    <dd>glavni grad Francuske</dd>
-    <img src="slike/pariz.jpg" alt="slika Pariza" width="350" height="300">
-</dl>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h1>Ovo je moja web stranica</h1></a>
+          <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+      <div style="background-color: beige;" class="px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold text-body-emphasis">Magdalena Kovačević</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Ovo je moja web stranica. Sadrži podatke o meni, ono što sam naučila na vježbama i sve moje zadaće.</p>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh;">
+          <div class="container px-5">
+            <img src="slike/welcome.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="welcome" width="500" height="500" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div style="background-color: rgb(241, 241, 168);" class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+           <img src="slike/1g.jpg" alt="ikona1" height="60">
+          </div>
+          <h3 class="fs-2 text-body-emphasis">O meni</h3>
+          <p>
+            <ul>
+                <li>Imam 24 godine.</li>
+                <li>Studentica sam Učiteljskog fakulteta.</li>
+                <li>Živim u Slavonskom Brodu.</li>
+            </ul>
+          </p>
+        </div>
+        <div style="background-color: lightgreen;" class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <img src="slike/2b.jpg" alt="ikona2" height="60">
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Slobodno vrijeme</h3>
+          <p>U slobodno vrijeme uglavnom čitam, šetam prirodom ili se družim s prijateljima/obitelji.</p>
+        </div>
+        <div style="background-color: lightblue;" class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <img src="slike/3p.jpg" alt="ikona3" width="60">
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Dodatno</h3>
+          <p>
+            <ul>
+                <li>Volim pse.</li>
+                <li>Volim se rolati.</li>
+                <li>Volim kartati.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <h1 style="text-align: center;">Želim posjetiti:</h1>
+      <ul style="text-align: center;" class="list-group">
+        <li class="list-group-item list-group-item-primary">Moskva</li>
+        <li class="list-group-item list-group-item-secondary">Island</li>
+        <li class="list-group-item list-group-item-success">Kuba</li>
+        <li class="list-group-item list-group-item-danger">Novi Zeland</li>
+      </ul>
+
+      <h1 style="text-align: center;">Gradovi u kojima želim živjeti</h1>
+    
+     
+        <hr class="featurette-divider">
+    
+        <div style="background-color: lightskyblue;" class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">LONDON, VELIKA BRITANIJA <span class="text-body-secondary"></span></h2>
+            <p class="lead">Voljela bih živjeti u Londonu.</p>
+            <p>Neki od glavnih razloga zašto bih voljela živjeti u Londonu:
+              <ul>
+                <li>kulturna raznolikost</li>
+                <li>povijest i arhitektura</li>
+                <li>restorani,klubovi</li>
+                <li>vrijeme</li>
+              </ul>
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img src="slike/london.jpg" alt="london" width="500" height="500">
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div style="background-color: lightgreen;" class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">PARIZ, FRANCUSKA<span class="text-body-secondary"></span></h2>
+            <p class="lead">Voljela bih živjeti u Parizu ili barem boraviti ondje nekoliko mjeseci.</p>
+            <p>Neki od glavnih razloga zašto bih htjela boraviti u Parizu:
+              <ul>
+                <li>jezik</li>
+                <li>kulinarstvo</li>
+                <li>arhitektura</li>
+              </ul>
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+           <img src="slike/pariz.jpg" alt="pariz" width="500" height="500">
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+      </div>
+<h1 style="text-align: center;">Idući dio stranice obuhvaća ono što sam radila na vježbama kolegija Web programiranje</h1>
 <h3>URL slike</h3>
 <p>logo UNISB</p>
 <img src="data:image/png;base64,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" alt="slika loga UNISB">
@@ -75,15 +138,6 @@
     <li><a href="link2.html">link2</a></li>
     <li><a href="link3.html">link3</a></li>
 </ul>
-<h3>Zadaće</h3>
-<ol>
-    <li><a href="zadace/zadaca1.html" target="_blank">zadaca1</a></li>
-    <li> <a href="zadace/zadaca2.html" target="_blank">zadaca2</a></li>
-    <li><a href="zadace/zadaca3.html">zadaca3</a></li>
-    <li><a href="zadace/zadaca4.html">zadaca4</a></li>
-    <li><a href="zadace/zadaca5.html">zadaca5</a></li>
-    <li><a href="zadace/zadaca6.html">zadaca6</a></li>
-</ol>
 <h3>Tablice u HTML-u</h3>
 <table border="1">
     <tr>
@@ -253,6 +307,78 @@
 <br>
 <h3>Ugradnja video zapisa</h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4lWgvFQX2MM?si=x5soz2RYc-J5JYTB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<hr><br>
+<h1 style="text-align: center;">U nastavku slijede sve zadaće koje sam napravila u sklopu kolegija Web programiranje</h1>
+<p>Pogledajte moje zadaće. Možete pronaći zanimljive recepte i preporuke nekih knjiga.</p>
+<div class="list-group">
+  <a href="Zadace" class="list-group-item list-group-item-action active" aria-current="true">
+    <h3>MOJE ZADAĆE</h3>
+  </a>
+  <a href="Zadace/zadaca1.html" target="_blank" class="list-group-item list-group-item-action">zadaća 1</a>
+  <a href="Zadace/zadaca2.html" target="_blank" class="list-group-item list-group-item-action">zadaća 2</a>
+  <a href="Zadace/zadaca3.html" target="_blank" class="list-group-item list-group-item-action">zadaća 3</a>
+  <a href="Zadace/zadaca4.html" target="_blank" class="list-group-item list-group-item-action">zadaća 4</a>
+  <a href="Zadace/zadaca5.html" target="_blank" class="list-group-item list-group-item-action">zadaća 5</a>
+  <a href="Zadace/zadaca6.html" target="_blank" class="list-group-item list-group-item-action">zadaća 6</a>
+  <hr><br>
+  <h2 style="background-color: lightgray;">Sviđa li ti se moja web stranica?</h2>
+  <div class="form-floating">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+    <label for="floatingTextarea">Napiši mi ovdje...</label>
+  </div>
+  <hr><br>
+  <h2 style="background-color: lightgrey;">Želiš li i ti naučiti napraviti svoju web stranicu?</h2>
+  <div class="form-floating">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+    <label for="floatingTextarea">Napiši mi ovdje...</label>
+  </div>
+</div>
+<h1 style="text-align: center; background-color: gold;">Hvala na posjeti mojoj web stranici!</h1>
+<div class="container">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+      </a>
+      <p class="text-body-secondary">© 2023</p>
+    </div>
 
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
 </body>
 </html>
